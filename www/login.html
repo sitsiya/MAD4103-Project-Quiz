@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login</title>
+<link rel="stylesheet" type="text/css" href="LoginDesign.css">
+</head>
+<body style="background-image: url(img/bg.jpg); background-repeat: no-repeat;">
+
+<div class="container">
+<div class="main">
+   <center>
+<h2 style="color: #006699">Login Page</h2><br>
+<form id="form_id" method="post" name="myform">
+<label style="color: #006699">User Name :</label><br>
+<input type="text" name="username" id="username"/><br><br>
+<label style="color: #006699">Password :</label><br>
+<input type="password" name="password" id="password"/><br><br>
+<input style="color: #006699; background-color: #e6f7ff" type="button" value="Submit" id="submit" onclick="validate()"/>
+</form>
+</center>
+</div>
+</div>
+
+<script>
+//var attempt = 3; // Variable to count number of attempts.
+//Below function Executes on click of login button.
+function validate(){
+var username = document.getElementById("username").value;
+var password = document.getElementById("password").value;
+if ( username == "admin" && password == "admin"){
+alert ("Login successfully");
+window.location = "main.html"; // Redirecting to other page.
+return false;
+}
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Question</title>
+	<meta name = "viewport" content = "width = device-width, initial-scale = 1">
+      <link rel = "stylesheet" href = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+      <script src = "https://code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script src = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+      <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+     
+
+</head>
+<body >
+<div data-role = "page" id = "page1">
+         <div data-role = "header" style="color: #ffaa80;">
+            <h1 style="color: #990000">Developer Quiz</h1>
+         </div>
+
+         <div data-role = "main" class = "ui-content">
+			<div id='container' style="background-image: url(img/bg.jpg); background-repeat: no-repeat;">
+			<div id='title'>
+				<center><h1 style="color: #990000">Developer Quiz</h1> </center>
+			</div>
+   			<br/>
+  			<div id='quiz' style="text-indent: 10px; font-size: 20px;"></div>
+
+
+	<div data-role = "footer" style="color: #ffaa80;">
+  			    <div class = "ui-grid-b">
+         <div class = "ui-block-a">
+            <div class = "ui-bar ui-bar-a" id='prev' style="color: #ffaa80;"> <a href = "#" class = "ui-btn ui-btn-icon-left ui-icon-arrow-l ui-btn-icon-notext ui-corner-all ui-shadow ui-shadow-icon" data-transition = "turn"></a></div>
+         </div>
+             <div class = "ui-block-b">
+            <div class = "ui-bar ui-bar-a" id='start' style="color: #ffaa80;"><a href = "#" class = "ui-btn ui-btn-icon-left ui-icon-home ui-btn-icon-notext ui-corner-all ui-shadow ui-shadow-icon" data-transition = "turn"></a></div>
+         </div>
+         <div class = "ui-block-c">
+            <div class = "ui-bar ui-bar-a" id='next' style="color: #ffaa80;"><a href="#"  class = "ui-btn ui-btn-icon-right ui-icon-arrow-r ui-btn-icon-notext ui-corner-all ui-shadow ui-shadow-icon" data-transition = "turn"></a></div>
+         </div>
+        </div>
+</div>
+
+  			
+    		<!-- <button class='' id='next'>Next</a></button>
+    		<button class='' id='prev'>Prev</a></button>
+    		<button class='' id='start'> Start Over</a></button> -->
+    	</div>
+
+		<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
+		<script type="text/javascript" src='questions.json'></script>
+	</div>
+		<script type='text/javascript' src='jsquiz.js'></script>
+	
+ <script  src="js/index.js"></script>
+
+</body>
+</html>
